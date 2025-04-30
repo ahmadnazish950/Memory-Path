@@ -1,0 +1,152 @@
+@font-face {
+    font-family: 'Roundo';
+    src: url(./fonts/Roundo-Bold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roundo';
+}
+
+html,
+body {
+
+    width: 100%;
+    height: 100%;
+    background-color: rgb(106, 100, 139);
+
+}
+
+header h1 {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 3.3rem;
+    color: lavenderblush;
+    text-shadow: 1px 2px 3px black;
+}
+
+main {
+
+    padding: 4rem;
+
+}
+
+#Memoryform {
+
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+#title,
+#description,
+#date {
+    padding: 15px;
+    border-radius: 3px;
+    border: none;
+    font-size: 1rem;
+}
+
+#mood {
+    padding: 15px;
+    border-radius: 3px;
+    border: none;
+    font-size: 1rem;
+}
+
+
+button,
+#add {
+    padding: 15px;
+    background-color: turquoise;
+    box-shadow: 7px 5px 5px rgb(20, 20, 20, 0.677);
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: transition 0.4s;
+
+}
+
+
+
+#add:active {
+    scale: 0.99;
+}
+
+#add:hover {
+    background-color: rgb(73, 205, 192);
+    letter-spacing: 2px;
+    transition: 0.1s;
+}
+
+#memorycontainer {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.memoryGen {
+
+    margin-top: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(33, 31, 31, 0.671);
+    transition: transform 0.2s ease;
+    line-height: 2.5rem;
+}
+
+.memoryGen h1 {
+
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+}
+
+.memoryGen p {
+
+    font-size: 20px;
+    line-height: normal;
+
+}
+
+.memoryGen small {
+
+    display: flex;
+    align-items: end;
+}
+
+.memoryGen:hover {
+    transform: translateY(-5px);
+    background-color: rgb(123, 112, 199);
+    color: wheat;
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 400px;
+    margin: auto;
+}
+
+.delete-btn {
+    padding: 15px 20px;
+    background-color: turquoise;
+    border-radius: 4px;
+    transition: transform 0.4s;
+    transition: transition 0.4s;
+}
+
+.delete-btn:hover {
+    letter-spacing: 3px;
+    transform: translateX(3px);
+    transition: 0.1s;
+    background-color: rgb(73, 205, 192);
+}
