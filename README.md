@@ -32,4 +32,4 @@ This project was created to help preserve the feeling behind each moment. It’s
 
 1. Clone the repo:
    ```bash
-   git clone 
+   git clone https://ahmadnazish950.github.io/Memory-Path/
